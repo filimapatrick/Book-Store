@@ -2,7 +2,10 @@ import React from 'react'
 import Header from '../components/Header'
 import styled from 'styled-components';
 import ProjectsSection from '../components/ProjectsSection';
-import { MdCardTravel,MdOutlineSearch } from 'react-icons/md';
+
+
+
+
 
 function FrontPage() {
   return (
@@ -13,9 +16,7 @@ function FrontPage() {
 
     <LeftSide>
         <Header/>
-        <p>Left Side </p>
-    
-        
+      
           </LeftSide>
 
 
@@ -23,11 +24,11 @@ function FrontPage() {
  {/* Right side of the page */}
     <RightSide>
       <div className='icons'>
-        <div className='icon1'>
+        {/* <div className='icon1'>
         <MdCardTravel/>
-        </div>
+        </div> */}
         <div className='icon2'>
-          <input type='text'/>
+          <input type='text' placeholder='search here'/>
         {/* <MdOutlineSearch/> */}
         </div>
       </div>
@@ -47,7 +48,7 @@ width:70%;
 height:100vh;
 z-index:1;
 
-
+background-image: url("./books12.jpeg");
 
 `
 
@@ -65,13 +66,10 @@ z-index:1;
   margin-left:-10rem;
   border-radius:20px;
   margin-top:4rem;
-  filter: drop-shadow(2px 4px 8px #585858)
+  filter: drop-shadow(1px 1px 2px #585858)
 }
 
-.icons{
-  display:flex;
-  justify-content:space-evenly
-}
+
 
 .icon2{
   width:100px;
@@ -79,6 +77,18 @@ z-index:1;
   color:green;
   cursor: pointer;
   border-radius:20px;
+}
+
+input[type=text] {
+width:15rem;
+
+  padding: 0.5rem;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  margin-left:7rem;
+  border-radius:20px;
+  background-color:white;
+  
 }
 
 `

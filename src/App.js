@@ -1,11 +1,11 @@
 
 import React from 'react';
-import {  Link, Route, Routes} from 'react-router-dom';
+import {  Route, Routes} from 'react-router-dom';
 import './App.css';
 
-import Books from './components/Books'
-import Stores from './components/Stores';
+import BookList from './pages/Booklist';
 import FrontPage from './pages/FrontPage';
+import BookDetail from './pages/BookDetail';
 
 function App() {
   return (
@@ -14,17 +14,16 @@ function App() {
     <div className="wrapper">
    
       <FrontPage/>
-        <nav>
+        {/* <nav>
           <ul>
             <li><Link to="/books">books</Link></li>
             <li><Link to="/stores">store</Link></li>
            
           </ul>
-        </nav>
+        </nav> */}
         <Routes>
-          <Route path="/books" element={<Books />}/>
-          
-          <Route path="/stores" element={<Stores />}/>
+          <Route path="/booklisting" element={<BookList />}/>
+          <Route path="/books/:id" element={<BookDetail/>}/>
          
           
         </Routes>

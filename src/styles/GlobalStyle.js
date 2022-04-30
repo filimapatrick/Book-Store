@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     --primary-color-button: rgba(3,127,255,.3);;
     --primary-color-brown: #D2B48C;
     --background-dark-grey: #e4e4e4;
+    --black-color:#0000;
     /* --border-color: #cbced8;
     --background-light-color: #F1F1F1;
     --white-color: #151515;
