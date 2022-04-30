@@ -91,6 +91,18 @@ width:15rem;
   
 }
 
+@media only screen and (max-width: 390px) {
+  background-color:none;
+
+    .bookItem__img {
+      height: 30px;
+    }
+
+    .text{
+      display:hidden;
+    }
+  }
+
 `
 
 const MainLayout = styled.div`

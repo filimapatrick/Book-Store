@@ -1,11 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 
 function Header() {
+    let navigate = useNavigate();
+    function HandleClick() {
+        navigate('/booklist')
+      }
   return (
       <>
-
-
      <HeaderButton>
      
     <div className='buttons'>
@@ -32,7 +36,10 @@ The easiest way to install Semantic UI is .
 For installing with specific integrations like Ember, React, or Meteor, see our integration guide.</p>
 
     </div>
-    <button className='btns'>Explore More</button>
+   
+   
+    <button className='btns' onClick={HandleClick}>Explore More</button>
+   
     </>
   )
 }

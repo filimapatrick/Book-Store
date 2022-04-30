@@ -39,9 +39,9 @@ margin-top:2rem;
     font-weight:bold;
     margin-top:1rem;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 390px) {
     .bookItem__img {
-      height: 350px;
+      height: 30px;
     }
   }
 `;

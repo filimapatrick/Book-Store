@@ -22,7 +22,7 @@ function App() {
           </ul>
         </nav> */}
         <Routes>
-          <Route path="/booklisting" element={<BookList />}/>
+          <Route path="/Booklist" element={<BookList />}/>
           <Route path="/books/:id" element={<BookDetail/>}/>
          
           
