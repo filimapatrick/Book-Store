@@ -13,7 +13,7 @@ function App() {
   
     <div className="wrapper">
    
-      <FrontPage/>
+   
         {/* <nav>
           <ul>
             <li><Link to="/books">books</Link></li>
@@ -22,6 +22,7 @@ function App() {
           </ul>
         </nav> */}
         <Routes>
+        <Route path="/" element={<FrontPage/>}/>
           <Route path="/Booklist" element={<BookList />}/>
           <Route path="/books/:id" element={<BookDetail/>}/>
          
