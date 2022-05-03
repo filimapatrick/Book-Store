@@ -7,6 +7,7 @@ import BookList from './pages/Booklist';
 import FrontPage from './pages/FrontPage';
 import BookDetail from './pages/BookDetail';
 
+
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<FrontPage/>}/>
           <Route path="/Booklist" element={<BookList />}/>
           <Route path="/books/:id" element={<BookDetail/>}/>
+
          
           
         </Routes>
