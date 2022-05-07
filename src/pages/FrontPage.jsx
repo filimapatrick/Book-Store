@@ -8,14 +8,9 @@ import ProjectsSection from '../components/ProjectsSection';
 
 
 function FrontPage() {
-  const [search, setSearch]= useState('')
 
-  const products =(e)=>{
-    if(e.key=='Enter')
-    {
-      console.log('adam')
-    }
-  }
+
+ 
   return (
     <>
 <MainLayout>
@@ -36,13 +31,13 @@ function FrontPage() {
         <MdCardTravel/>
         </div> */}
         <div className='icon2'>
-          <input type='text' placeholder='search here'
+          {/* <input type='text' placeholder='search here'
           
           value={search}
           onChange={(e)=>setSearch(e.target.value)}
           onKeyPress={products}
           
-          />
+          /> */}
         {/* <MdOutlineSearch/> */}
         </div>
       </div>

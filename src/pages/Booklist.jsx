@@ -10,7 +10,7 @@ const ProductPage = () => {
   const dispatch = useDispatch();
   const fetchProducts = async () => {
     const response = await axios
-      .get("https://www.googleapis.com/books/v1/volumes?q='+search+'health&key=AIzaSyArjpdUWJlz6CbQM7h7tlOaNdfAEBclN_U" + '& maxResults=100')
+      .get("https://www.googleapis.com/books/v1/volumes?q='+search+'react&key=AIzaSyArjpdUWJlz6CbQM7h7tlOaNdfAEBclN_U" + '& maxResults=100')
       .catch((err) => {
         // console.log(response)
         console.log("Err: ", err);
